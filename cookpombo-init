@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#initial File
+
+#reset environment
+sudo rm /opt/cookpombo/cookpombo-init;
+sudo rm -Rf /opt/cookpombowww;
+
+
+#create dirs
+sudo mkdir /opt/cookpombowww;
+sudo mkdir /opt/cookpombowww/projeto;
+sudo chmod 777 /opt/cookpombowww/projeto;
+
+
+
+#run commands
+cd /opt/cookpombowww/projeto; 
+sudo wget https://raw.githubusercontent.com/slackwarecps/cookpombo/master/cloud-init --no-check-certificate;
+sudo chmod 777 /opt/cookpombo/cookpombo-init;
+sudo /opt/cookpombo/cookpombo-init $1 
