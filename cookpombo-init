@@ -4,18 +4,18 @@
 
 #reset environment
 sudo rm /opt/cookpombo/cookpombo-init;
-sudo rm -Rf /opt/cookpombowww;
+sudo rm -Rf /opt/cookpombo;
 
 
 #create dirs
-sudo mkdir /opt/cookpombowww;
-sudo mkdir /opt/cookpombowww/projeto;
+sudo mkdir /opt/cookpombo;
+sudo mkdir /opt/cookpombo/projeto;
 sudo chmod 777 /opt/cookpombowww/projeto;
 
 
 
 #run commands
-cd /opt/cookpombowww/projeto; 
+cd /opt/cookpombo/projeto; 
 sudo wget https://raw.githubusercontent.com/slackwarecps/cookpombo/master/cookpombo-init --no-check-certificate;
 sudo chmod 777 /opt/cookpombo/cookpombo-init;
 sudo /opt/cookpombo/cookpombo-init $1 
