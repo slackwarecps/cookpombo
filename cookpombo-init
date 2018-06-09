@@ -16,6 +16,6 @@ sudo chmod 777 /opt/cookpombowww/projeto;
 
 #run commands
 cd /opt/cookpombowww/projeto; 
-sudo wget https://raw.githubusercontent.com/slackwarecps/cookpombo/master/cloud-init --no-check-certificate;
+sudo wget https://raw.githubusercontent.com/slackwarecps/cookpombo/master/cookpombo-init --no-check-certificate;
 sudo chmod 777 /opt/cookpombo/cookpombo-init;
 sudo /opt/cookpombo/cookpombo-init $1 
