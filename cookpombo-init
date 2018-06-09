@@ -15,7 +15,7 @@ sudo chmod 777 /opt/cookpombowww/projeto;
 
 
 #run commands
-cd /opt/cookpombo; 
+cd /opt/cookpombo/projeto; 
 sudo wget https://raw.githubusercontent.com/slackwarecps/cookpombo/master/cookpombo-init --no-check-certificate;
 sudo chmod 777 /opt/cookpombo/cookpombo-init;
-sudo /opt/cookpombo/cookpombo-init $1 
+sudo /opt/cookpombo/projeto/cookpombo-init $1 
